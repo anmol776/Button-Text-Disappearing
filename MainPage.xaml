@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BugApp.MainPage">
+
+    <ScrollView>
+        <Grid 
+                   
+                    Margin="10"
+                    Padding="0"
+                    HeightRequest="60"
+                    ColumnSpacing="10"
+                    ColumnDefinitions="*,*,*,*">
+            <Button 
+                    Text="Bug Button 1" 
+                    Grid.Column="0"
+                    Padding="0"
+                    x:Name="btnclear"
+                    FontSize="12"
+                    CornerRadius="0"
+                    Clicked="btnclear_Clicked"
+                    BackgroundColor="Blue"
+                    FontFamily="OpenSansRegular"/>
+            <Button 
+                    Text="Bug Button 2" 
+                    Grid.Column="1"
+                    Padding="0"
+                    FontSize="12"
+                    BackgroundColor="Blue"
+                    CornerRadius="0"
+                    x:Name="btnpreviousorder"
+                    Clicked="btnpreviousorder_Clicked"
+                    FontFamily="OpenSansRegular"/>
+            <Button 
+                    Text="Bug Button 3" 
+                    Grid.Column="2"
+                    Padding="0"
+                    FontSize="12"
+                    BackgroundColor="Blue"
+                    CornerRadius="0"
+                    x:Name="btnpendingorder"
+                    Clicked="btnpendingorder_Clicked"
+                    FontFamily="OpenSansRegular"/>
+            <Button 
+                    Text="Bug Button 4" 
+                    Grid.Column="3"
+                    Padding="0"
+                    FontSize="12"
+                    BackgroundColor="Blue"
+                    CornerRadius="0"
+                    x:Name="btnsubmit"
+                    Clicked="btnsubmit_Clicked"
+                    FontFamily="OpenSansRegular"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
